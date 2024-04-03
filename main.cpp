@@ -13,7 +13,7 @@ int main() {
   world.print();
 
   std::cin.get();
-  std::cout << "\033c";
+  std::cout << "\033c"; // Clear the terminal
 
   world.step(1.);
   std::cout << "Global temperature after one time step: "

@@ -4,14 +4,14 @@ std::ostream& operator<<(std::ostream& os, const Daisy& daisy)
 {
   switch (daisy.color_) {
     case DaisyColor::Black:
-      os << "B";
+      os << "🌸";
       break;
     case DaisyColor::White:
-      os << "W";
+      os << "💮";
       break;
     case DaisyColor::None:
     default:
-      os << " ";
+      os << "  ";
       break;
   }
   return os;

@@ -1,5 +1,22 @@
 #include "daisy.hpp"
 
+std::ostream& operator<<(std::ostream& os, const Daisy& daisy)
+{
+  switch (daisy.color_) {
+    case DaisyColor::Black:
+      os << "B";
+      break;
+    case DaisyColor::White:
+      os << "W";
+      break;
+    case DaisyColor::None:
+    default:
+      os << " ";
+      break;
+  }
+  return os;
+}
+
 void Daisy::sprout(DaisyColor color) {
   color_ = color;
   age_ = 0;

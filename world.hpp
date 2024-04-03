@@ -20,6 +20,16 @@ class World {
   void step(double solar_luminosity);
   void compute_diffusion();
   void spread();
+
+  void World::print() {
+    for (int i{0}; i < size_; ++i) {
+      for (int j{0}; j < size_; ++j) {
+        std::cout << daisies_[i * size_ + j];
+      }
+      std::cout << "\n";
+    }
+    std::cout << "\n";
+  }
 };
 
 #endif  // WORLD_HPP

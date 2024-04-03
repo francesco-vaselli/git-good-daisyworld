@@ -39,7 +39,7 @@ The live flowers spread to the neighbouring land based on seeding probability de
 
 The `CMakeLists.txt` file makes it easy to compile and run the code:
 
-```
+```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build
 build/daisyworld
@@ -47,7 +47,7 @@ build/daisyworld
 
 Alternatively you can manually run the compilation with something like:
 
-```
+```bash
 g++ main.cpp daisy.cpp world.cpp
 ```
 
@@ -55,7 +55,7 @@ g++ main.cpp daisy.cpp world.cpp
 
 The simulation will output a result similar to the one shown below:
 
-```
+```bash
 💮💮🌸🌸🌸🌸🌸💮💮  
 🌸💮💮🌸🌸🌸🌸🌸🌸🌸
 🌸💮💮💮🌸🌸🌸🌸🌸🌸
